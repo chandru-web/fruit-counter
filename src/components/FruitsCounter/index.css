@@ -1,0 +1,99 @@
+/* Write your CSS here */
+.app-container {
+  background-color: #ffd569;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fruit-card-container {
+  height: 90vh;
+  width: 90vw;
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+}
+.fruit-heading {
+  color: #000000;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+}
+.mango-count {
+  color: #ffd568;
+}
+.banana-count {
+  color: #ffd569;
+}
+.fruit-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+}
+.mango-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+.banana-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fruit-image {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.fruit-button {
+  background-color: #007bff;
+  color: white;
+  height: 30px;
+  width: 120px;
+  padding: 5px;
+  cursor: pointer;
+  outline: none;
+  border: 0px solid #007bff;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.fruit-button:hover {
+  background-color: #0056b3; /* Darker blue for hover */
+  color: white;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 600px) {
+  .fruit-card-container {
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+  }
+  .fruit-card {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .mango-card,
+  .banana-card {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .fruit-image {
+    height: 200px;
+    width: 200px;
+  }
+  .fruit-heading {
+    font-size: 24px;
+  }
+  .fruit-button {
+    width: 100px;
+    height: 25px;
+  }
+}
